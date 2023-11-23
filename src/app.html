@@ -1,0 +1,118 @@
+<template>
+	<div class="orderDetailsContainer" style="background:white;">
+		<!-- main heading -->
+		<div class="main-heading slds-m-vertical_xx-small">Monsoon Collection</div>
+		<div class="main-subheading slds-m-bottom_small">₹150 off on purchase above ₹ 2000</div>
+
+		<!-- custom tabs -->
+		<div class="c-tabs slds-tabs_default">
+			<ul class="slds-tabs_default__nav" role="tablist">
+				<li class="slds-tabs_default__item slds-tabs_default__link tab-title slds-is-active" data-index="tab-one"
+					role="presentation" onclick={handleToggleClick}>
+					Details
+				</li>
+
+				<li class="slds-tabs_default__item slds-tabs_default__link tab-title " data-index="tab-two" role="presentation"
+					onclick={handleToggleClick}>
+					Reviews
+				</li>
+				<li class="slds-tabs_default__item slds-tabs_default__link tab-title " data-index="tab-three"
+					role="presentation" onclick={handleToggleClick}>
+					T&C
+				</li>
+			</ul>
+		</div>
+
+		<div id="tab-default-1" class="slds-tabs_default__content tab-content tab-one tab-active" role="tabpanel"
+			aria-labelledby="tab-default-1__item">
+			<div class="details-container  slds-p-around_medium" style="height: 910px;background: #F1F3FB;">
+				<div class="product-title">STOP</div>
+				<div class="product-subtitle slds-m-vertical_x-small">Men's Rainier L4 Windproof Soft Shell Hoodie</div>
+
+				<div class="product-image slds-m-vertical_medium">
+					<img src="https://5.imimg.com/data5/AV/IM/KE/SELLER-54165930/hoodie-1000x1000.jpg">
+				</div>
+
+				<div class="imageCarouselContainer slds-scrollable">
+					<div class="slds-grid">
+						<div class="img-item">
+							<img src="https://5.imimg.com/data5/AV/IM/KE/SELLER-54165930/hoodie-1000x1000.jpg">
+						</div>
+						<div class="img-item">
+							<img src="https://5.imimg.com/data5/AV/IM/KE/SELLER-54165930/hoodie-1000x1000.jpg">
+						</div>
+						<div class="img-item">
+							<img src="https://5.imimg.com/data5/AV/IM/KE/SELLER-54165930/hoodie-1000x1000.jpg">
+						</div>
+						<div class="img-item">
+							<img src="https://5.imimg.com/data5/AV/IM/KE/SELLER-54165930/hoodie-1000x1000.jpg">
+						</div>
+					</div>
+				</div>
+
+				<div class="sizeContainer slds-m-vertical_large">
+					<div class="slds-grid slds-wrap">
+						<div class="slds-col slds-size_1-of-2 size-title slds-p-bottom_x-small">
+							<span>Select Size</span>
+						</div>
+						<div class="slds-col slds-size_1-of-2 slds-text-align_right size-view-all">
+							<span>View Size Chart</span>
+						</div>
+						<div class="slds-col slds-size_1-of-1 size-selector">
+							<div class="size active">S</div>
+							<div class="size">M</div>
+							<div class="size">L</div>
+							<div class="size">XL</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="colorContainer slds-m-vertical_large">
+					<div class="slds-grid slds-wrap">
+						<div class="slds-col slds-size_1-of-1 color-title slds-p-bottom_x-small">
+							<span>Available Colors</span>
+						</div>
+						<div class="slds-col slds-size_1-of-1 color-selector">
+							<div class="color one"></div>
+							<div class="color two"></div>
+							<div class="color three"></div>
+							<div class="color four"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="quantityContainer slds-m-vertical_large">
+					<div class="slds-grid slds-wrap">
+						<div class="slds-col slds-size_1-of-1 quantity-title slds-p-bottom_x-small">
+							<span>Quantity</span>
+						</div>
+						<div class="slds-col slds-size_1-of-2 quantity-selector">
+							<div class="quantity">-</div>
+							<div class="value">1</div>
+							<div class="quantity">+</div>
+						</div>
+						<div class="slds-col slds-size_1-of-2 priceContainer">
+							<div class="price">₹ 1799</div>
+							<div class="shipping">Free shipping</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slds-form-element__control slds-p-top_medium">
+					<button class="c-button slds-button slds-button_brand buy-now">Buy Now</button>
+				</div>
+				<div class="slds-form-element__control slds-p-top_small">
+					<button class="c-button slds-button slds-button_brand cart">Add to Cart</button>
+				</div>
+
+			</div>
+		</div>
+		<div id="tab-default-2" class="slds-tabs_default__content tab-content tab-two" role="tabpanel"
+			aria-labelledby="tab-default-2__item"> Two
+		</div>
+		<div id="tab-default-3" class="slds-tabs_default__content tab-content tab-three" role="tabpanel"
+			aria-labelledby="tab-default-3__item"> Three
+		</div>
+
+	</div>
+</template>
